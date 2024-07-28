@@ -1,0 +1,69 @@
+name: flutter_template
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  animated_splash_screen: ^1.3.0
+  cached_network_image: ^3.2.2
+  dio_cache_interceptor: ^3.4.2
+  dio: ^5.1.2
+  collection: ^1.18.0
+  dropdown_button2: ^2.3.9
+  http_parser: ^4.0.2
+  import_sorter: ^4.6.0
+  intl: ^0.18.0
+  mvc_pattern: ^8.12.0
+  path: ^1.8.3
+  provider: ^6.0.3
+  shared_preferences: ^2.0.15
+  
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+# Add icon in this folder and complete the path. Then run: flutter pub get 
+# Finally run: flutter pub run flutter_launcher_icons
+  # Global
+  image_path: "images/app_icon/"
+  # Android
+  android: "launcher_icon"
+  adaptive_icon_background: "#FFFFFF"
+  #adaptive_icon_foreground: "images/app_icon/"
+  # iOS
+  ios: true
+  remove_alpha_ios: true
+
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - images/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Light.ttf
+          weight: 300
+        - asset: fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
